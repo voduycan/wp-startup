@@ -1,0 +1,128 @@
+//@import "variable";
+.company{
+    padding-left: 29%;
+    padding-right: 29%;
+    h3{
+        font-size: $size-40 - 4 ;
+        line-height: $size-40 + 2;
+        font-family: AvenirLTStd-Black;
+        margin-bottom: 1em;
+    }
+    @media only screen and (max-width: 1023px) {
+        padding-left: 20% !important;
+        padding-right: 20% !important;
+    }
+    @media only screen and (max-width: 575px) {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    @media only screen and (max-width: 414px) {
+        h3{
+            font-size: $size-24;
+            line-height: 28px;
+            margin-top: 20px;
+        }
+    }
+    h5{
+        margin-bottom: 1em;
+    }
+    .company-panel{
+        font-family: AvenirLTStd-Medium;
+        .panel-body{
+            @media only screen and (max-width: 414px) {
+                height: 66px;
+            }
+            height: 62px;
+            border-top: 1px solid rgba(167, 169, 172, 0.2468);
+            padding-top: 2%;
+            &:hover{
+                background: rgba(121, 108, 109, 0.1207);
+            }
+            .panel-img{
+                img{
+                    @media only screen and (max-width: 414px) {
+                        width: 44px;
+                        height: 44px;
+                    }
+                    width: 40px;
+                    height: 42px;
+                }
+            }
+            .panel-name{
+                text-transform: capitalize;
+                font-size: $size-16;
+                line-height: $size-16 + 3;
+                padding-left: 2em;
+                @media only screen and (max-width: 414px) {
+                    font-size: $size-16 - 2;
+                    line-height: $size-16;
+                    padding-left: 2.5em;
+                }
+            }
+            .panel-123{
+                @media only screen and (max-width: 414px) {
+                    font-size: $size-16 - 2;
+                    line-height: $size-16;
+                }
+                padding-left: 0;
+                font-size: $size-16;
+                line-height: $size-16 + 7;
+                text-align: right;
+            }
+        }
+    }
+    .company-btn{
+        @media only screen and(max-width: 575px) {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin-left: -16px;
+        }
+        margin-top: 64px;
+        div{
+            @media only screen and (max-width: 575px) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .btn-already{
+                @include have-account;
+                span{
+                    text-transform: uppercase;
+                }
+                .above{
+                    display: none;
+                    @media only screen and (max-width: 575px) {
+                        display: block;
+                    }
+                }
+                .match{
+                    display: block;
+                    @media only screen and (max-width: 575px) {
+                        display: none;
+                    } 
+                }
+                @media only screen and (min-width: 576px) {
+                    height: 40px;
+                    border-radius: 30px;
+                    font-size: $size-16 - 2;
+                    line-height: $size-16;
+                    text-transform: uppercase;
+                    
+                }
+                
+            
+            }
+            .btn-sign-up{
+                @include sign-up-mixin;
+                @media only screen and (min-width: 576px) {
+                    height: 40px;
+                    border-radius: 30px;
+                    font-size: $size-16 - 2;
+                    line-height: $size-16;
+                    text-transform: uppercase;
+                }
+                
+            }
+        }
+    }
+}

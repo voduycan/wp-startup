@@ -1,0 +1,113 @@
+.red-color{
+    color: red;
+
+}
+
+//register
+.register{
+    padding-left: 29%;
+    padding-right: 29%;
+    h3{
+        font-size: $size-40 - 4 ;
+        line-height: $size-40 + 2;
+        font-family: AvenirLTStd-Black;
+    }
+    @media only screen and (max-width: 1023px) {
+        padding-left: 20% !important;
+        padding-right: 20% !important;
+    }
+    @media only screen and (max-width: 575px) {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+    @media only screen and (max-width: 414px) {
+        h3{
+            font-size: $size-24;
+            line-height: 28px;
+            margin-top: 20px;
+        }
+    }
+    .was-validated .form-control:invalid ~ .input-label{
+        color: $color-red ;
+    }
+    .was-validated .form-control:valid ~ .input-label{
+        color: $color-383838 ;
+    }
+    .needs-validation{
+        .form-input{
+            .my-group{
+                padding-left: 0;
+                padding-right: 0;
+                position: relative;
+                margin-top: 48px;
+                @media only screen and (max-width: 414px) {
+                    margin-top: 40px;
+                }
+                .input-label{
+                    position: absolute;
+                    top: -25px;
+                    @media only screen and (max-width: 414px) {
+                        font-size: $size-12 + 2;
+                        line-height: $size-12 + 6;
+                        top: -20px;
+                    }
+                    font-size: $size-16;
+                    line-height: $size-16 + 8;
+                    font-family: AvenirLTStd-Medium;
+                }
+                input{
+                    @media only screen and (max-width: 414px) {
+                        font-size: $size-12 + 2;
+                        line-height: $size-12 + 4;
+                    }
+                    border-radius: 0;
+                    font-size: $size-16;
+                    line-height: $size-16;
+                    font-family: AvenirLTStd-Light;
+                    color: $color-808080;
+                    height: 40px;
+                    &:focus{
+                        box-shadow: none;
+                        border: 1px solid $color-383838;
+                    }
+                }
+                .invalid-feedback{
+                    span{
+                        img{
+                            margin-right: 5px;
+                            margin-left: 10px;
+                            margin-top: -3px;
+                        }
+                    }
+                }
+            }
+        }
+        .form-btn{
+            @media only screen and(max-width: 575px) {
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                margin-left: -16px;
+            }
+            margin-top: 64px;
+            div{
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .btn-already{
+                @include have-account;
+            }
+            .btn-sign-up{
+                @include sign-up-mixin;
+            }
+        }
+    }
+}
+
+//footer
+.footer-sup{
+    @media only screen and (max-width: 575px) {
+        display: none !important;
+    }
+}

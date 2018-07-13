@@ -1,0 +1,41 @@
+@import "variable";
+body{
+    @media only screen and (max-width: 414px) {
+        min-height: 100vh !important;
+    }
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 1009.96px;
+    height: 100vh;
+    position: relative;
+    h1,h2,h3{
+        font-family: AvenirLTStd-Black;
+    }
+    h4,h5,h6{
+        font-family: AvenirLTStd-Medium;
+    }
+    h1{
+        font-size: $size-40 + 20;
+        line-height: $size-40 + 24;
+    }
+    h2{
+        font-size: $size-40;
+        line-height: $size-40 + 8;
+    }
+    h3{
+        font-size: $size-40 - 4;
+        line-height: $size-40 + 8;
+    }
+    h4{
+        font-size: $size-24 - 4;
+        line-height: $size-24;
+    }
+    h5{
+        font-size: $size-16;
+        line-height: $size-16 + 8;
+    }
+    h6{
+        font-size: $size-16 - 2;
+        line-height: $size-16;
+    }    
+}

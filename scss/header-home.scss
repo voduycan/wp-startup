@@ -1,0 +1,227 @@
+
+//header
+.header-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3em;
+    padding-right: 3em;
+    font-family: AvenirLTStd-Medium !important;
+    height: 104px;
+    @media only screen and (max-width: 767px) {
+        height: 44px;
+    }
+   
+    @media only screen and (max-width: 1024px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @media only screen and (max-width: 575px) {
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+    #collapsibleNavId{
+        background: white;
+        z-index: 500;
+    }
+    .navbar{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        justify-content: space-between;;
+        align-items: center;
+        @media only screen and (max-width: 767px) {
+            justify-content: space-between;
+            height: 44px;
+            padding: 0;
+        }
+
+        a{
+            .logo{
+                @media only screen and (max-width: 767px) {
+                    width: 78px;
+                    margin-left: 16px;
+                    height: 30px;
+                }
+
+            }
+        }
+        .navbar-toggler {
+            border: none;
+            outline: none;
+            padding: 0;
+            @media only screen and (max-width: 767px) {
+                margin-right: 16px;
+            }
+            .navbar-toggler-icon{
+                
+                height: 1em;
+                width: 16px;
+                height: 11px;
+                
+            }
+            #navbar-icon-1{
+                background-image: url('../img/svg/Vector.svg');
+            }
+            #navbar-icon-2{
+                background-image: url('../img/svg/Group3.svg');
+                display: none;
+            }
+        }
+        #collapsibleNavId{
+            flex-grow: 0;
+            width: 100%;
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+               @media only screen and (max-width: 767px) {
+                text-align: right;
+                margin: 0;
+               }
+                .nav-form{
+                    @media only screen and (max-width: 768px) {
+                        margin-top: -5px !important;
+                    }
+                    padding-right: 0;
+                }
+                li{
+                    .form-inline{
+                        @media only screen and (max-width: 767px) {
+                           display: none;
+                        }
+                        .input-group{
+                            height: 100%;
+                            width: 100%;
+                            @media only screen and (min-width: 1024px) {
+                                width: 17em !important;
+                            }
+                            span{
+                                @media only screen and (max-width: 768px) {
+                                    padding-left: 15% !important;
+                                    height: 2.6em !important;
+                                }
+                                border: 1px solid $color-red;
+                                border-right: none;
+                                background: white;
+                                border-bottom-left-radius: 3em;
+                                border-top-left-radius: 3em;
+                                height: 50px;
+                                padding-left: 20%;
+                                i{
+                                    font-size: $size-16;
+                                    color: $color-383838;
+                                    padding: 0.5em;
+                                }
+                            }
+                            input{
+                                padding-left: 0.5em;
+                                border: 1px solid $color-red;
+                                border-left: none;
+                                font-size: $size-16;
+                                border-bottom-right-radius: 3em;
+                                border-top-right-radius: 3em;
+                                &:focus{
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                    
+                    a{
+                        @media only screen and (max-width: 768px) and (min-width: 768px) {
+                            padding-left: 0 !important;
+                            font-size: $size-12 !important;
+                        }
+
+                        font-size: $size-16;
+                        
+                    }
+                    
+                }
+                .menu-row{
+                    display: flex;
+                    align-items: center;
+                    @media only screen and (max-width: 767px) {
+                        padding: 0 !important;
+                    }                    
+                }
+                .menu-item{
+                    margin-top: 0.15em;
+                    padding: 0;
+                    a{
+                        color: $color-4a4a4a;
+                        &:hover{
+                            color: $color-red;
+                        }
+                    }
+                }
+                .img-btn-row{
+                    padding: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    a{
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .icon-stats-bars, .icon-user{
+                            @media only screen and (max-width: 767px) {
+                                display: none;
+                            }
+                            @media only screen and (max-width: 955px) and (min-width: 768px) {
+                                padding: 5px;
+                                font-size: $size-16;
+                            }
+                            font-size: 20px;
+                            border: 1px solid #F4333D;
+                            border-radius: 50%;
+                            padding: 10px;
+                            color: $color-red;
+                            &:hover{
+                                background: $color-red;
+                                color: $color-white;
+                            }
+                        }
+                        
+                    }
+                    .sign-up-btn{
+                        @media only screen and (max-width: 955px) and (min-width: 768px) {
+                            width: 75px;
+                            height: 35px;
+                        }
+                       text-decoration: none;
+                        border-radius: 29px;
+                        text-transform: uppercase;
+                        color: $color-white;
+                        background: $color-red;
+                        font-size: 14px;
+                        line-height: 16px;
+                        width: 100px;
+                        text-align: center;
+                        height: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover{
+                            border: 1px solid $color-red;
+                            background: $color-white;
+                            color: $color-red;
+                        }
+                        @media only screen and (max-width: 767px) {
+                            border: 0;
+                            background: 0;
+                            color: $color-red;
+                            text-align: right;
+                            padding-top: 0.6em;
+                            display: inline-block;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

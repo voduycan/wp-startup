@@ -1,0 +1,92 @@
+@mixin join-btn {
+    font-family: AvenirLTStd-Medium;
+    width: 18em;
+    height: 3em;
+    background: red;
+    border-radius: 2em;
+    color: white;
+    text-transform: uppercase;
+    img{
+        width: 30px;
+        height: auto;
+        padding-bottom: 0.5em;
+        margin-left: 1em;
+    }
+}
+
+@mixin claim-btn {
+    font-family: AvenirLTStd-Medium;
+    &:hover{
+        background: $color-red-hover;
+    }
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: left;
+    @media only screen and (max-width: 320px) {
+        text-align: center !important;
+    }
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    background: $color-red;
+    color: $color-white;
+    .row-claim{
+        .claim-left{
+            .br-claim{
+                @media only screen and (max-width: 575px) {
+                    display: none;
+                }
+            }
+        }
+        .claim-right{
+            img{
+                padding-top: 1em;
+                padding-left: 1em;
+            }
+        }
+    }
+}
+
+@mixin have-account {
+    @media only screen and (max-width: 575px) {
+        font-size: $size-12 + 2;
+        line-height: $size-12 + 4;
+    }
+    box-shadow: none !important;
+    font-size: $size-12 + 2;
+    line-height: $size-12 + 4;
+    height: 64px;
+    width: 100%;
+    background: $color-EFEFEF;
+    color: $color-383838;
+    border-radius: 0;
+    &:hover{
+        background: $color-808080;
+    }
+}
+
+@mixin  sign-up-mixin {
+    @media only screen and (max-width: 575px) {
+        font-size: $size-12 + 2;
+        line-height: $size-12 + 4;
+        img{
+            width: 18px !important;
+        }
+    }
+    box-shadow: none !important;
+    font-size: $size-24 - 4;
+    line-height: $size-24 - 9;
+    height: 64px;
+    width: 100%;
+    background: $color-383838;
+    color: $color-white;
+    text-transform: uppercase;
+    border-radius: 0;
+    img{
+        width: 25px;   
+    }
+    &:hover,:focus{
+        background: $color-red;
+    }
+}
+

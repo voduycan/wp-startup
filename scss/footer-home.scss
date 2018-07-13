@@ -1,0 +1,143 @@
+//footer
+.footer-home{
+    font-family: AvenirLTStd-Medium !important;
+    .row{
+        margin: 0;
+    }
+    @media only screen and (max-width: 1024px) {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+    padding-left: 3em;
+    padding-right: 3em;
+    background: $color-footer;
+    padding-top: 1em;
+    h3{
+        font-family: AvenirLTStd-Medium !important;
+        color: $color-white;
+        font-size: $size-12 + 2;
+        line-height: 16px;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+    }
+    ul{
+        list-style-type: none;
+        padding-left: 0;
+        font-size: $size-12;
+        color: $color-979797;
+        li{
+            margin-bottom: 0.5em;
+            a{
+                color: $color-979797;
+                &:hover{
+                    text-decoration: none;
+                    color: $color-red;
+                }
+            }
+        }
+    }
+    .footer-end{
+        padding-right: 0;
+       .ft-end-left{
+            padding-left: 0;
+       }
+       .ft-end-right{
+           padding-left: 5px;
+       }
+        img{
+            @media only screen and (max-width: 374px) {
+                width: 90%;
+            }
+            width: 149px;
+            height: auto;
+            margin-bottom: 1em;
+        }
+        text-align: right;
+        @media only screen and (max-width: 575px) {
+            text-align: left !important;
+        }
+        ul{
+            li{
+                margin-bottom: 0.1em !important;
+            }
+        }
+    }
+    .copy-right{
+        width: 100%;
+        font-size: $size-12 - 2;
+        line-height: 16px;
+        padding-bottom: 1em;
+        .cp-r-row{
+            border-top: 1px solid $color-border-cp-r;
+            padding-top: 1em;
+            .cp-r-1{
+                .cp-r-btn{
+                    
+                    border-right: 1px solid $color-808080;
+                    a{
+                        color: $color-a7a9ac;
+                        &:hover{
+                            text-decoration: none;
+                            color: $color-red;
+                        }
+                   }
+                }
+                .cp-r-term{
+                    @media only screen and (max-width: 375px) {
+                        padding-right: 0;
+                    }
+                    @media only screen and (max-width: 320px) {
+                        padding: 0;
+                    }
+                    a{
+                        color: $color-a7a9ac;
+                        &:hover{
+                            text-decoration: none;
+                            color: $color-red;
+                        }
+                   }
+                }
+                button{
+                    padding: 0;
+                    line-height: 0.5em;
+                    border: 0;
+                    background: none;
+                  
+                    
+                    @media only screen and (max-width: 575px) {
+                        text-transform: uppercase;
+                    }
+                    a{
+                        color: $color-copy-right;
+                        
+                    }
+                }
+            }
+            .cp-r-2{
+                padding: 0;
+                p{
+                    color: $color-808080;
+                    text-align: center;
+                    margin: 0;
+                    @media only screen and (max-width: 575px) {
+                       text-align: center;
+                       margin-top: 2em;
+                    }
+                }
+            }
+            .cp-r-3{
+                p{
+                    @media only screen and (max-width: 575px) {
+                        text-align: center;
+                        margin-top: 1em;
+                        margin-bottom: 1em;
+                    }
+                    text-align: right;
+                    color: $color-white;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
