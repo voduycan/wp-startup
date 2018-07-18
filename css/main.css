@@ -78,11 +78,14 @@ p{
 
 body {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto !important;
   min-height: 1009.96px;
   height: 100vh;
   font-size: 24px;
-  position: relative; }
+  position: relative; 
+  
+}
+
   @media only screen and (max-width: 414px) {
     body {
       min-height: 100vh !important; } }
@@ -104,7 +107,8 @@ body {
     line-height: 24px; }
   body h5 {
     font-size: 16px;
-    line-height: 24px; }
+    line-height: 24px;
+    color: #333; }
   body h6 {
     font-size: 14px;
     line-height: 16px; }
@@ -1398,7 +1402,10 @@ body {
       line-height: 16px; } }
   .enter .h5-1 {
     margin-top: 1em;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    text-transform: lowercase;
+    color: #383838;
+    letter-spacing: 1px; }
   .enter h6 {
     color: #979797; }
   .enter * {
@@ -1575,7 +1582,8 @@ body {
       line-height: 28px;
       margin-top: 20px; } }
   .company h5 {
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    color: #333; }
   .company .company-panel {
     font-family: AvenirLTStd-Medium; }
     .company .company-panel .panel-body {
@@ -1587,6 +1595,7 @@ body {
           height: 66px; } }
       .company .company-panel .panel-body:hover {
         background: rgba(121, 108, 109, 0.1207); }
+        
       .company .company-panel .panel-body .panel-img img {
         width: 40px;
         height: 42px; }
@@ -1598,12 +1607,11 @@ body {
         text-transform: capitalize;
         font-size: 16px;
         line-height: 19px;
-        padding-left: 2em; }
+       padding-left: 0;}
         @media only screen and (max-width: 414px) {
           .company .company-panel .panel-body .panel-name {
             font-size: 14px;
-            line-height: 16px;
-            padding-left: 2.5em; } }
+            line-height: 16px; } }
       .company .company-panel .panel-body .panel-123 {
         padding-left: 0;
         font-size: 16px;

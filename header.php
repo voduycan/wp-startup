@@ -11,50 +11,21 @@
  * @since 1.0
  * @version 1.0
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js no-svg">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/main.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
-
-	<header id="masthead" class="site-header" role="banner">
-
-		<?php get_template_part( 'template-parts/header/header', 'image' ); ?>
-
-		<?php if ( has_nav_menu( 'top' ) ) : ?>
-			<div class="navigation-top">
-				<div class="wrap">
-					<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
-				</div><!-- .wrap -->
-			</div><!-- .navigation-top -->
-		<?php endif; ?>
-
-	</header><!-- #masthead -->
-	<!doctype html>
-<html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-  </head>
-  <body>
-      
-    <header class="header-home">
+	<header class="header-home">
         <nav class="navbar navbar-expand-md navbar-light ">
         <a class="navbar-brand" href="#"><img class="logo" src="<?php bloginfo('template_url') ?>/img/svg/StartupSG-Light.svg" alt=""></a>
         <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -78,16 +49,16 @@
             
                 <div class="col-md-5 col-sm-12 row menu-row">    
                     <li class="nav-item col-sm-12 col-md-3 menu-item">
-                        <a class="nav-link" href="#"><?php echo get_post_meta($post->ID, 'Listings', true); ?></a>
+                        <a class="nav-link" href="http://localhost/duycan/company/"><?php echo get_post_meta(55, 'Listings', true); ?></a>
                     </li>
                     <li class="nav-item col-sm-12 col-md-3 menu-item">
-                        <a class="nav-link" href="#"><?php echo get_post_meta($post->ID, 'Schemes', true); ?></a>
+                        <a class="nav-link" href="http://localhost/duycan/find-company/"><?php echo get_post_meta(55, 'Schemes', true); ?></a>
                     </li>
                     <li class="nav-item col-sm-12 col-md-3 menu-item">
-                        <a class="nav-link" href="#"><?php echo get_post_meta($post->ID, 'Events', true); ?></a>
+                        <a class="nav-link" href="http://localhost/duycan/register/"><?php echo get_post_meta(55, 'Events', true); ?></a>
                     </li>
                     <li class="nav-item col-sm-12 col-md-3 menu-item">
-                        <a class="nav-link" href="#"><?php echo get_post_meta($post->ID, 'Help', true); ?></a>
+                        <a class="nav-link" href="http://localhost/duycan/sign-in/"><?php echo get_post_meta(55, 'Help', true); ?></a>
                     </li>
                 </div>
 
@@ -98,15 +69,13 @@
                     
                         <a href=""><span class="icon-user"></span></a>
                   
-                        <a class="sign-up-btn" href=""><?php echo get_post_meta($post->ID, 'sign', true); ?></a>
+                        <a class="sign-up-btn" href="http://localhost/duycan/sign-in/"><?php echo get_post_meta(55, 'sign', true); ?></a>
                    
                 </div>
             </ul>
         </div>
         </nav>
     </header>
-
-
 
 	<?php
 

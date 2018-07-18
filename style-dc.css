@@ -414,15 +414,15 @@ body {
     background: rgba(0, 0, 0, 0.7);
     height: 100%;
     width: 100%;
-    background-image: url("img/png/architectural.png");
+    z-index: 1;
+    background-image: url("http://localhost/duycan/wp-content/uploads/2018/07/architectural.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    z-index: -1;
     position: absolute; }
     @media only screen and (max-width: 575px) {
       .section-panel .bg-op {
-        background-image: url("img/png/Image.png"); } }
+        background-image: url("http://localhost/duycan/wp-content/uploads/2018/07/Image.png"); } }
   .section-panel .row-panel {
     position: relative;
     z-index: 1;

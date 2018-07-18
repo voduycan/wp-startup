@@ -8,11 +8,7 @@
  */
  
 ?>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link type="text/css" href="<?php bloginfo('template_url') ?>/css/main.css">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 
 <?php get_header(); ?>
 
@@ -67,7 +63,7 @@
                             <?php echo get_post_meta($post->ID, 'Browse', true); ?> <br class="br-claim">
                             <?php echo get_post_meta($post->ID, 'opportunities', true); ?>
                         </div>
-                        <div class="col-4 col-sm-12 col-xl-4 claim-right"><img src="<?php bloginfo('template_url') ?>/img/svg/tail-right.svg" alt=""></div>
+                        <div class="col-4 col-sm-12 col-xl-4 claim-right"><img src="<?php echo get_post_meta($post->ID, 'tall-right', true); ?>" alt=""></div>
                     </div>
                 </button>
             </div>
@@ -79,14 +75,14 @@
             <div class="col-12 col-sm-6 birdging-left">
                 <h1><?php echo get_post_meta($post->ID, 'bird-h1', true); ?></h1>
                 <p ><?php echo get_post_meta($post->ID, 'Finding', true); ?> </p>
-                <button class="join btn"><?php echo get_post_meta($post->ID, 'community', true); ?> <img src="<?php bloginfo('template_url') ?>/img/svg/tail-right.svg" alt=""></button>
+                <button class="join btn"><?php echo get_post_meta($post->ID, 'community', true); ?> <img src="<?php echo get_post_meta($post->ID, 'tall-right', true); ?>" alt=""></button>
             </div>
-            <div class="col-12 col-sm-6 birdging-right"><img class="img-none" src="<?php bloginfo('template_url') ?>/img/png/right_image.png" alt=""></div>
+            <div class="col-12 col-sm-6 birdging-right"><img class="img-none" src="<?php echo get_post_meta($post->ID, 'right-img', true); ?>" alt=""></div>
         </div>
     </section>
     <section class="birdging">
         <div class="row">
-            <div class="col-12 col-sm-6 birdging-right"><img src="<?php bloginfo('template_url') ?>/img/png/left_image.png" alt=""></div>
+            <div class="col-12 col-sm-6 birdging-right"><img src="<?php echo get_post_meta($post->ID, 'left-img', true); ?>" alt=""></div>
             <div class="col-12 col-sm-6 build">
                 <h1><?php echo get_post_meta($post->ID, 'confidence', true); ?></h1>
                 <p><?php echo get_post_meta($post->ID, 'need', true); ?></p>
@@ -112,7 +108,7 @@
                         <div class="col-8 col-sm-12 col-xl-8 claim-left">
                             <?php echo get_post_meta($post->ID, 'claim', true); ?> 
                             <br class="br-claim"><?php echo get_post_meta($post->ID, 'profile', true); ?> </div>
-                        <div class="col-4 col-sm-12 col-xl-4 claim-right"><img src="<?php bloginfo('template_url') ?>/img/svg/tail-right.svg" alt=""></div>
+                        <div class="col-4 col-sm-12 col-xl-4 claim-right"><img src="<?php echo get_post_meta($post->ID, 'tall-right', true); ?>" alt=""></div>
                     </div>
                 </button>
             </div>
@@ -123,8 +119,8 @@
             <span><?php echo get_post_meta($post->ID, 'landscape', true); ?></span>
         </h1>
         <h5><?php echo get_post_meta($post->ID, 'Most', true); ?></h5>
-        <img class="img-desktop" src="<?php bloginfo('template_url') ?>/img/png/Investment Landscape_illustrartion.png" alt="">
-        <img class="img-mobile" src="<?php bloginfo('template_url') ?>/img/png/Group.png" alt="">
+        <img class="img-desktop" src="<?php echo get_post_meta($post->ID, 'img-landscape', true); ?>" alt="">
+        <img class="img-mobile" src="<?php echo get_post_meta($post->ID, 'group', true); ?>" alt="">
     </section>
     <section class="sector">
         <h2><?php echo get_post_meta($post->ID, 'Browse2', true); ?> 
@@ -176,7 +172,7 @@
                         <small> <?php echo get_post_meta($post->ID, 'series', true); ?></small>
                         <small> <?php echo get_post_meta($post->ID, 'inver', true); ?></small>
                     </div>
-                    <div class="col-3 col-sm-3 box-right"><img src="<?php bloginfo('template_url') ?>/img/png/Rectangle.png" alt=""></div>
+                    <div class="col-3 col-sm-3 box-right"><img src="<?php echo get_post_meta($post->ID, 'Rectangle', true); ?>" alt=""></div>
 
                 </div>
             </div>
@@ -191,7 +187,7 @@
                         <small> <?php echo get_post_meta($post->ID, 'series', true); ?></small>
                         <small> <?php echo get_post_meta($post->ID, 'inver', true); ?></small>
                     </div>
-                    <div class="col-3 col-sm-3 box-right"><img src="<?php bloginfo('template_url') ?>/img/png/Rectangle.png" alt=""></div>
+                    <div class="col-3 col-sm-3 box-right"><img src="<?php echo get_post_meta($post->ID, 'Rectangle', true); ?>" alt=""></div>
 
                 </div>
             </div>
@@ -206,7 +202,7 @@
                         <small> <?php echo get_post_meta($post->ID, 'series', true); ?></small>
                         <small> <?php echo get_post_meta($post->ID, 'inver', true); ?></small>
                     </div>
-                    <div class="col-3 col-sm-3 box-right"><img src="<?php bloginfo('template_url') ?>/img/png/Rectangle.png" alt=""></div>
+                    <div class="col-3 col-sm-3 box-right"><img src="<?php echo get_post_meta($post->ID, 'Rectangle', true); ?>" alt=""></div>
 
                 </div>
             </div>
@@ -221,7 +217,7 @@
                         <small> <?php echo get_post_meta($post->ID, 'series', true); ?></small>
                         <small> <?php echo get_post_meta($post->ID, 'inver', true); ?></small>
                     </div>
-                    <div class="col-3 col-sm-3 box-right"><img src="<?php bloginfo('template_url') ?>/img/png/Rectangle.png" alt=""></div>
+                    <div class="col-3 col-sm-3 box-right"><img src="<?php echo get_post_meta($post->ID, 'Rectangle', true); ?>" alt=""></div>
 
                 </div>
             </div><div class="col-12 col-sm-6 col-xl-4 list-box">
@@ -235,7 +231,7 @@
                         <small> <?php echo get_post_meta($post->ID, 'series', true); ?></small>
                         <small> <?php echo get_post_meta($post->ID, 'inver', true); ?></small>
                     </div>
-                    <div class="col-3 col-sm-3 box-right"><img src="<?php bloginfo('template_url') ?>/img/png/Rectangle.png" alt=""></div>
+                    <div class="col-3 col-sm-3 box-right"><img src="<?php echo get_post_meta($post->ID, 'Rectangle', true); ?>" alt=""></div>
 
                 </div>
             </div>
@@ -250,7 +246,7 @@
                         <small> <?php echo get_post_meta($post->ID, 'series', true); ?></small>
                         <small> <?php echo get_post_meta($post->ID, 'inver', true); ?></small>
                     </div>
-                    <div class="col-3 col-sm-3 box-right"><img src="<?php bloginfo('template_url') ?>/img/png/Rectangle.png" alt=""></div>
+                    <div class="col-3 col-sm-3 box-right"><img src="<?php echo get_post_meta($post->ID, 'Rectangle', true); ?>" alt=""></div>
 
                 </div>
             </div>
@@ -261,7 +257,7 @@
         <h2><?php echo get_post_meta($post->ID, 'Find', true); ?> 
             <span><?php echo get_post_meta($post->ID, 'vision3', true); ?></span>
         </h2>
-        <button class="join btn"><?php echo get_post_meta($post->ID, 'community2', true); ?><img src="<?php bloginfo('template_url') ?>/img/svg/tail-right.svg" alt=""></button>
+        <button class="join btn"><?php echo get_post_meta($post->ID, 'community2', true); ?><img src="<?php echo get_post_meta($post->ID, 'tall-right', true); ?>" alt=""></button>
     </section>
 
 
